@@ -12,11 +12,6 @@
 @interface TPMenuVeiw : UIView
 
 @property (nonatomic, assign)BOOL isHide;
-
-+ (instancetype)TPMenuViewInitialWithFrame:(CGRect)frame
-                            Blocks:(NSArray *)blocks
-                    deleController:(UIViewController *)vc
-                         keyWindow:(UIWindow *)kWindow;
 - (void)start:(CGRect)rect ;
 
 @end

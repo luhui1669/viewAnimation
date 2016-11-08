@@ -17,16 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    TPMenuVeiw *menuView = [[TPMenuVeiw alloc]initWithFrame:self.view.frame];
-//    [menuView start:CGRectMake([UIScreen mainScreen].bounds.size.width - 70, [UIScreen mainScreen].bounds.size.height - 150, 50, 50)];
-//    menuView.backgroundColor = [UIColor yellowColor];
-//    menuView.isHide = YES;
-//    [self.view addSubview:menuView];
-    self.view.backgroundColor = [UIColor yellowColor];
-   [TPMenuVeiw TPMenuViewInitialWithFrame:self.view.frame
-                                    Blocks:[NSArray new]
-                            deleController:self
-                                 keyWindow:[[UIApplication sharedApplication].windows firstObject] ];
+    TPMenuVeiw *menuView = [[TPMenuVeiw alloc]initWithFrame:self.view.frame];
+    [menuView start:CGRectMake([UIScreen mainScreen].bounds.size.width - 70, [UIScreen mainScreen].bounds.size.height - 150, 50, 50)];
+    menuView.backgroundColor = [UIColor yellowColor];
+    menuView.isHide = YES;
+    [self.view addSubview:menuView];
+
     
  }
 
