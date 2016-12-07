@@ -12,6 +12,7 @@
 @interface TPMenuVeiw : UIView
 
 @property (nonatomic, assign)BOOL isHide;
+
 - (void)start:(CGRect)rect ;
 
 @end
